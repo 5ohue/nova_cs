@@ -58,6 +58,23 @@ To compile run this:
 $ cargo run --release
 ```
 
+## Examples
+
+Here are screenshots of neovim using
+[nova_cs_example_theme](https://github.com/alacritty/alacritty-theme) and
+different palettes:
+
+### Breeze:
+![breeze](./images/breeze.png)
+### Darktooth:
+![darktooth](.//images/darktooth.png)
+### Everforest:
+![everforest](.//images/everforest.png)
+### Ubuntu:
+![ubuntu](./images/ubuntu.png)
+### Wombat:
+![wombat](./images/wombat.png)
+
 ## TODO
 
 Here's what is planned to be implemented:
