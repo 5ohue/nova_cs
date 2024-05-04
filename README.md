@@ -61,7 +61,7 @@ $ cargo run --release
 ## Examples
 
 Here are screenshots of neovim using
-[nova_cs_example_theme](https://github.com/alacritty/alacritty-theme) and
+[nova_cs_example_theme](https://github.com/5ohue/nova_cs_theme_example) and
 different palettes:
 
 ### Breeze:
