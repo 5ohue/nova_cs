@@ -1,4 +1,4 @@
-local colors = {
+return {
     fg = "#D3C6AA",
     bg = "#2D353B",
     bright = {
@@ -66,12 +66,12 @@ local colors = {
         magenta = "#D699B6",
     },
     bright_fg_25 = {
-        red     = "#DDA295",
-        yellow  = "#D7C195",
-        green   = "#BDC395",
-        cyan    = "#ABC39E",
-        blue    = "#A9C1AF",
-        magenta = "#D5B0B0",
+        red     = "#E1908B",
+        yellow  = "#D9BF8A",
+        green   = "#B2C28B",
+        cyan    = "#97C298",
+        blue    = "#94BEB1",
+        magenta = "#D5A4B3",
     },
     bright_fg_50 = {
         red     = "#DDA295",
@@ -82,12 +82,12 @@ local colors = {
         magenta = "#D5B0B0",
     },
     bright_fg_75 = {
-        red     = "#DDA295",
-        yellow  = "#D7C195",
-        green   = "#BDC395",
-        cyan    = "#ABC39E",
-        blue    = "#A9C1AF",
-        magenta = "#D5B0B0",
+        red     = "#D8B4A0",
+        yellow  = "#D5C49F",
+        green   = "#C8C5A0",
+        cyan    = "#BFC5A4",
+        blue    = "#BEC3AC",
+        magenta = "#D4BBAD",
     },
     mixed_bright = {
         red_yellow   = "#E79D6C",
@@ -154,12 +154,12 @@ local colors = {
         magenta_red  = "#DD8CA2",
     },
     mixed_bright_fg_25 = {
-        red_yellow   = "#DFB18C",
-        yellow_green = "#CAC295",
-        green_cyan   = "#B4C39A",
-        cyan_blue    = "#A4C4A3",
-        blue_magenta = "#B3BACD",
-        magenta_red  = "#D9A9A4",
+        red_yellow   = "#E3A77D",
+        yellow_green = "#C5C18B",
+        green_cyan   = "#A4C291",
+        cyan_blue    = "#96C0A8",
+        blue_magenta = "#ABB2D1",
+        magenta_red  = "#DB9AA3",
     },
     mixed_bright_fg_50 = {
         red_yellow   = "#DFB18C",
@@ -170,12 +170,12 @@ local colors = {
         magenta_red  = "#D9A9A4",
     },
     mixed_bright_fg_75 = {
-        red_yellow   = "#DFB18C",
-        yellow_green = "#CAC295",
-        green_cyan   = "#B4C39A",
-        cyan_blue    = "#A4C4A3",
-        blue_magenta = "#B3BACD",
-        magenta_red  = "#D9A9A4",
+        red_yellow   = "#D9BB9B",
+        yellow_green = "#CEC5A0",
+        green_cyan   = "#C3C5A2",
+        cyan_blue    = "#BEC4A8",
+        blue_magenta = "#B9C1CF",
+        magenta_red  = "#A3C3CF",
     },
 
     gray_n05 = "#252E35",
@@ -283,5 +283,3 @@ local colors = {
     gray_97 = "#CEC2A7",
     gray_98 = "#D0C3A8",
 }
-
-return colors
