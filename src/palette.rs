@@ -170,47 +170,47 @@ pub fn calculate_more_colors(palette: &mut Palette) {
     palette.bg_normal_75.magenta = lerp_rgb(&palette.bg, &palette.normal.magenta, 0.75);
 
 
-    palette.normal_bright_25.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.5);
-    palette.normal_bright_25.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.5);
-    palette.normal_bright_25.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.5);
-    palette.normal_bright_25.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.5);
-    palette.normal_bright_25.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.5);
-    palette.normal_bright_25.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.5);
+    palette.normal_bright_25.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.25);
+    palette.normal_bright_25.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.25);
+    palette.normal_bright_25.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.25);
+    palette.normal_bright_25.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.25);
+    palette.normal_bright_25.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.25);
+    palette.normal_bright_25.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.25);
 
-    palette.normal_bright_50.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.5);
-    palette.normal_bright_50.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.5);
-    palette.normal_bright_50.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.5);
-    palette.normal_bright_50.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.5);
-    palette.normal_bright_50.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.5);
-    palette.normal_bright_50.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.5);
+    palette.normal_bright_50.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.50);
+    palette.normal_bright_50.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.50);
+    palette.normal_bright_50.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.50);
+    palette.normal_bright_50.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.50);
+    palette.normal_bright_50.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.50);
+    palette.normal_bright_50.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.50);
 
-    palette.normal_bright_75.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.5);
-    palette.normal_bright_75.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.5);
-    palette.normal_bright_75.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.5);
-    palette.normal_bright_75.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.5);
-    palette.normal_bright_75.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.5);
-    palette.normal_bright_75.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.5);
+    palette.normal_bright_75.red     = lerp_rgb(&palette.normal.red,     &palette.bright.red,     0.75);
+    palette.normal_bright_75.yellow  = lerp_rgb(&palette.normal.yellow,  &palette.bright.yellow,  0.75);
+    palette.normal_bright_75.green   = lerp_rgb(&palette.normal.green,   &palette.bright.green,   0.75);
+    palette.normal_bright_75.cyan    = lerp_rgb(&palette.normal.cyan,    &palette.bright.cyan,    0.75);
+    palette.normal_bright_75.blue    = lerp_rgb(&palette.normal.blue,    &palette.bright.blue,    0.75);
+    palette.normal_bright_75.magenta = lerp_rgb(&palette.normal.magenta, &palette.bright.magenta, 0.75);
 
-    palette.bright_fg_25.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.5);
-    palette.bright_fg_25.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.5);
-    palette.bright_fg_25.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.5);
-    palette.bright_fg_25.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.5);
-    palette.bright_fg_25.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.5);
-    palette.bright_fg_25.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.5);
+    palette.bright_fg_25.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.25);
+    palette.bright_fg_25.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.25);
+    palette.bright_fg_25.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.25);
+    palette.bright_fg_25.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.25);
+    palette.bright_fg_25.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.25);
+    palette.bright_fg_25.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.25);
 
-    palette.bright_fg_50.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.5);
-    palette.bright_fg_50.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.5);
-    palette.bright_fg_50.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.5);
-    palette.bright_fg_50.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.5);
-    palette.bright_fg_50.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.5);
-    palette.bright_fg_50.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.5);
+    palette.bright_fg_50.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.50);
+    palette.bright_fg_50.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.50);
+    palette.bright_fg_50.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.50);
+    palette.bright_fg_50.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.50);
+    palette.bright_fg_50.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.50);
+    palette.bright_fg_50.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.50);
 
-    palette.bright_fg_75.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.5);
-    palette.bright_fg_75.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.5);
-    palette.bright_fg_75.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.5);
-    palette.bright_fg_75.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.5);
-    palette.bright_fg_75.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.5);
-    palette.bright_fg_75.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.5);
+    palette.bright_fg_75.red     = lerp_rgb(&palette.bright.red,     &palette.fg, 0.75);
+    palette.bright_fg_75.yellow  = lerp_rgb(&palette.bright.yellow,  &palette.fg, 0.75);
+    palette.bright_fg_75.green   = lerp_rgb(&palette.bright.green,   &palette.fg, 0.75);
+    palette.bright_fg_75.cyan    = lerp_rgb(&palette.bright.cyan,    &palette.fg, 0.75);
+    palette.bright_fg_75.blue    = lerp_rgb(&palette.bright.blue,    &palette.fg, 0.75);
+    palette.bright_fg_75.magenta = lerp_rgb(&palette.bright.magenta, &palette.fg, 0.75);
 
     /*
      * Mixed colors
@@ -339,7 +339,7 @@ rgb_to_hex(&mix.magenta_red))
 
 pub fn palette_to_lua(palette: &Palette) -> String {
     let mut lua;
-    lua = format!("local colors = {{\n    fg = \"{}\",\n    bg = \"{}\",",
+    lua = format!("return {{\n    fg = \"{}\",\n    bg = \"{}\",",
                   rgb_to_hex(&palette.fg),
                   rgb_to_hex(&palette.bg));
 
@@ -418,7 +418,7 @@ rgb_to_hex(&mix.magenta_red))
         }
     }
 
-    lua = format!("{}\n{}\n}}\n\nreturn colors", lua, grays);
+    lua = format!("{}\n{}\n}}", lua, grays);
 
     return lua;
 }
