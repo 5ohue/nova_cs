@@ -1,6 +1,5 @@
 use std::error::Error;
-
-use nova_cs::palette::{calculate_more_colors, load_palette, palette_to_lua};
+use nova_cs::palette;
 
 fn main() -> Result<(), Box<dyn Error>> {
     if let Err(e) = nova_cs::parse_args() {
@@ -23,10 +22,10 @@ fn main() -> Result<(), Box<dyn Error>> {
     let buffer = std::fs::read(input_filename)?;
     let data = std::str::from_utf8(&buffer)?;
 
-    let mut palette = load_palette(&data)?;
-    calculate_more_colors(&mut palette);
+    let mut palette = palette::toml::load_palette(&data)?;
+    palette::calculate_more_colors(&mut palette);
 
-    let lua = palette_to_lua(&palette);
+    let lua = palette::lua::palette_to_lua(&palette);
 
     std::fs::write(output_filename, &lua)?;
 
