@@ -1,3 +1,8 @@
+//-----------------------------------------------------------------------------
+pub mod lerp;
+pub mod convert;
+//-----------------------------------------------------------------------------
+
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub struct RGB {
     pub r: u8,

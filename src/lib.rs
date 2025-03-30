@@ -1,15 +1,14 @@
 //-----------------------------------------------------------------------------
-pub mod convert;
 pub mod color;
-pub mod lerp;
 pub mod palette;
 //-----------------------------------------------------------------------------
-pub use color::*;
+pub use color::{RGB, HSV, HSLuv};
 //-----------------------------------------------------------------------------
 
 #[cfg(test)]
 mod test {
     use super::*;
+    use color::convert;
 
     static HEXES: [&str; 13] = [
         "#FFFFFF",

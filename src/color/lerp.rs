@@ -1,6 +1,6 @@
+//-----------------------------------------------------------------------------
 use crate::{RGB, HSV, HSLuv};
-use crate::convert::{rgb_to_hsv, hsv_to_rgb, rgb_to_hsluv, hsluv_to_rgb};
-
+use super::convert::{rgb_to_hsv, hsv_to_rgb, rgb_to_hsluv, hsluv_to_rgb};
 //-----------------------------------------------------------------------------
 
 pub fn lerp(a: f64, b: f64, t: f64) -> f64 {
@@ -84,6 +84,7 @@ pub fn lerp_hsluv(a: &HSLuv,
 }
 
 //-----------------------------------------------------------------------------
+
 
 
 

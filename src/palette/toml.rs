@@ -1,13 +1,10 @@
 //-----------------------------------------------------------------------------
 // Includes:
-
-use crate::convert::*;
+use crate::color::convert::*;
 use crate::palette::{Palette, Colors, Mixed};
 use std::fmt::{Debug, Display};
-
 //-----------------------------------------------------------------------------
 // Error type:
-
 pub enum LoadPaletteError {
     TOMLFail,
     NoColorsTable,
@@ -31,7 +28,6 @@ impl std::error::Error for LoadPaletteError {}
 
 //-----------------------------------------------------------------------------
 // Loading function:
-
 pub fn load_palette(toml: &str) -> Result<Palette, LoadPaletteError> {
     /*
      * Parse toml
@@ -85,7 +81,6 @@ pub fn load_palette(toml: &str) -> Result<Palette, LoadPaletteError> {
 
 //-----------------------------------------------------------------------------
 // Serializing function:
-
 pub fn palette_to_toml(palette: &Palette) -> String {
     let mut toml;
     toml = format!("[colors.primary]\nbg = \"{}\"\nfg = \"{}\"\n\n",
@@ -172,3 +167,5 @@ rgb_to_hex(&mix.magenta_red))
 
     return toml;
 }
+
+//-----------------------------------------------------------------------------

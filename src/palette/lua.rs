@@ -1,9 +1,8 @@
-use crate::convert::*;
+//-----------------------------------------------------------------------------
+use crate::color::convert::*;
 use crate::palette::{Palette, Colors, Mixed};
-
 //-----------------------------------------------------------------------------
 // Serializing function:
-
 pub fn palette_to_lua(palette: &Palette) -> String {
     let mut lua;
     lua = format!("return {{\n    fg = \"{}\",\n    bg = \"{}\",",
@@ -89,3 +88,5 @@ rgb_to_hex(&mix.magenta_red))
 
     return lua;
 }
+
+//-----------------------------------------------------------------------------

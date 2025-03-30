@@ -1,12 +1,9 @@
 //-----------------------------------------------------------------------------
 // Imports:
-
 pub mod toml;
 pub mod lua;
-
 //-----------------------------------------------------------------------------
 // Types:
-
 use crate::RGB;
 
 #[derive(Debug, Clone, Default)]
@@ -75,9 +72,8 @@ impl Palette {
 
 //-----------------------------------------------------------------------------
 // Calculating colors:
-
 pub fn calculate_more_colors(palette: &mut Palette) {
-    use crate::lerp::*;
+    use crate::color::lerp::*;
 
     /*
      * Between colors
@@ -179,3 +175,5 @@ pub fn calculate_more_colors(palette: &mut Palette) {
         palette.grays.push((i, lerp_rgb(&palette.bg, &palette.fg, t)));
     }
 }
+
+//-----------------------------------------------------------------------------
