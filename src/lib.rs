@@ -1,39 +1,15 @@
-pub mod parse_args;
+//-----------------------------------------------------------------------------
 pub mod convert;
 pub mod color;
 pub mod lerp;
 pub mod palette;
-
 //-----------------------------------------------------------------------------
-
 pub use color::*;
-pub use parse_args::*;
-
 //-----------------------------------------------------------------------------
 
-use std::sync::Mutex;
-
-#[derive(Debug, Default)]
-pub struct Config {
-    pub input_filename: String,
-    pub output_filename: String,
-}
-
-impl Config {
-    pub const fn new() -> Self {
-        return Config { input_filename: String::new(),
-                        output_filename: String::new() }
-    }
-}
-
-pub static CONFIG: Mutex<Config> = Mutex::new(Config::new());
-
-//-----------------------------------------------------------------------------
 #[cfg(test)]
 mod test {
     use super::*;
-
-    //-----------------------------------------------------------------------------
 
     static HEXES: [&str; 13] = [
         "#FFFFFF",
@@ -144,3 +120,5 @@ mod test {
         });
     }
 }
+
+//-----------------------------------------------------------------------------
